@@ -2,6 +2,7 @@
 //go:generate protoc --plugin=/usr/local/go/bin/protoc-gen-go --go_out=.  --proto_path=../internal/proto/v0/  v0_messages.proto
 //go:generate protoc --plugin=/usr/local/go/bin/protoc-gen-go --go_out=.  --proto_path=../internal/proto/v0/  v0_constraints.proto
 //go:generate protoc --plugin=/usr/local/go/bin/protoc-gen-go --go_out=.  --proto_path=../internal/proto/v0/  v0_summaries.proto
+//go:generate protoc --plugin=/usr/local/go/bin/protoc-gen-go --go_out=.  --proto_path=../internal/proto/v1/  whylogs_messages.proto
 //go:generate ls cmd/generated/whylogs
 
 package main
