@@ -7,8 +7,8 @@
 package main
 
 import (
+	view "awesomeProject/cmd/internal/view"
 	"fmt"
-	"os"
 )
 
 func check(e error) {
@@ -20,7 +20,7 @@ func check(e error) {
 func main() {
 	fmt.Println("hello world")
 
-	dat, err := os.ReadFile("/tmp/dat")
-	check(err)
-	fmt.Print(string(dat))
+	view := view.ProfileView{}
+	view.ReadDelimited()
+
 }
